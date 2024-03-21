@@ -1,0 +1,34 @@
+El ejemplo que realizaremos para demostrar como se ingresan datos, sera un programa que recibe la superficie de un cuadrado y calculara su area, posteriormente mostrara el resultado en consola.
+Aqui practicaremos el ingreso de datos, el convertir un tipo de dato a otro y a hacer pequeños calculos.
+Para el ingreso de datos por medio de consola utilizamos la funcion "input" la cual recibe por parametro el mensaje a mostrar para indicarle al usuario que debe ingresar.
+Esta funcion retorna lo que haya ingresado el usuario en forma de string.
+En un nuevo archivo python ingresamos lo siguiente:
+
+lado = input("Ingrese la medida uno de los lados: ")
+
+Esto dara como resultado que en la variable "lado" se deposite lo que haya escrito el usuario y en el tipo de dato "string".
+Para poder convertir este tipo de dato a "integer" (para poder hacer operaciones matematicas) usamos la funcion "int", que recibe como parametro la variable con el tipo de dato a convertir.
+De ese modo el convertir la variable lado puede escribirse de la siguiente manera:
+
+lado = int(lado)
+
+Con esta linea sobreescribimos la variable lado con el anterior contenido de la variable lado pero ahora como "integer"
+Una forma corta de escribir las anteriores dos lineas seria asi:
+
+lado = int(input("Ingrese la medida uno de los lados: "))
+
+Con esta forma de escribirlo; en una sola linea hemos recibido lo que escribe el usuario e inmediatamente pasarlo a "integer"
+Ahora podemos hacer el calculo del area del cuadrado colocando una variable que resulte del cuadrado del lado:
+
+superficie = lado * lado
+
+Como parte final del programa imprimos el resultado:
+
+print("La superficie del cuadrado es")
+print(superficie)
+
+Una forma corta de trabajar con variables y textos es interpolando la variable en el texto, un metodo de hacer esto es con "format strings", para ello en lugar de las anteriores dos lineas, escribimos lo siguiente:
+
+print(f"La superficie del cuadrado es {superficie}")
+
+Con esta forma corta imprimimos nuestro mensaje y donde colocamos la variable superficie se imprimira el valor de la variable y no como tal su nombre.
