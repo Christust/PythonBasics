@@ -1,0 +1,21 @@
+Para realizar nuestro primer programa en python necesitamos tenerlo instalado, dependiendo de nuestro sistema operativo (Microsoft, Linux o MacOs) se realizaran diferentes pasos, a grandes rasgos solo debemos consultar la pagina oficial de descargas de Python en https://www.python.org/downloads/ y seguir los pasos de descarga para nuestro sistema. Linux y Mac por lo general ya contaran con python instalado, para confirmar que lo tengamos instalado y ademas en nuestro PATH de comandos ejecutamos en una terminal el siguiente comando:
+
+python --version
+
+En ocasiones cuando python ya esta en el sistema como es el caso de Linux y Mac, el comando de python debe ser escrito de la siguiente forma:
+
+python3 --version
+
+Si lo tenemos instalado encontraremos una respuesta similar a la siguiente indicándonos la versión que tenemos disponible o la que tengamos activa en nuestro PATH de la consola:
+
+Python 3.11.6
+
+Confirmando que tenemos instalado nuestro lenguaje, procederemos a abrir IDLE (el editor de código por defecto cuando se instala python) o nuestro editor de código de preferencia (en mi caso utilizo visual studio code) y escribiremos lo siguiente:
+
+print("Hola Mundo Python")
+
+Al ejecutar este programa con esta instrucción obtendremos en la consola (o en nuestro editor si es que cuenta con consola integrada) el siguiente mensaje:
+
+Hola Mundo Python
+
+Aunque esto no representa una solución para casi ningún problema, son nuestros primeros pasos para entender este lenguaje y con este pequeño "Hola Mundo" podemos decir que realizamos nuestro primer programa en este Python.
