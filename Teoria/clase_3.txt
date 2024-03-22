@@ -1,0 +1,81 @@
+Cuando en un problema solo participan opreaciones, entradas y salidas, se dice que estamos ante una estructura de tipo secuencial.
+Hasta ahora solo hemos codificado empleando estructuras secuenciales.
+En la programación no todo se puede resolver empleando este tipo de estructuras. En el caso de tener que tomar una decisión necesitaremos de estructuras condicionales.
+Lo mas comun es que en la resolcion de un problema se necesiten de ambas estructuras. A continuación se explicaran un poco mas a fondo las estructuras condicionales.
+
+Estructura condicional simple.
+
+En este caso cuando se presenta la elección tenemos el camino de realizar una actividad o simplemente seguir con la secuencia del programa.
+
+Un ejemplo practico podria ser el siguiente: Ingresar el salario mensual de una persona, si este supera los 20000 pesos se mostrara un mensaje en pantalla indicando que este es un empleado administrativo, de lo contrario no se imprime nada.
+
+El codigo seria el siguiente:
+
+sueldo=int(input("Ingrese cual es su sueldo:"))
+if sueldo>20000:
+    print("Esta persona debe abonar impuestos")
+
+La palabra clave "if" indica el inicio de una estructura condicional, de forma inmediata colocamos nuestra condición la cual finalizamos con dos puntos.
+Aquello que deseemos se ejecute en caso de que nuestra condicion se cumpla lo colocamos despues del "if" con una indentación (generalmente 4 espacios).
+La indentación es una caracteristica de Python para la codificación estructuras. De esta forma el interprete podra identificar donde finalizan las instrucciones contenidas en alguna estructura (en este caso la rama verdadera de nuestro "if").
+
+Si analizamos este caso al ingresar el sueldo de la persona si este no supera el limite establecido no se hara nada, en cambio si lo superamos se mostrara un mensaje.
+Esta estructura tiene solo un camino donde se realiza una accion y de no ingresar a el, el programa seguira su curso de forma normal.
+
+Estructura condicional compuesta.
+
+Asi como en la estructura anterior simplemente tendremos un segundo camino el cual tomar en caso de que nuestra condición no se cumpla. Aqui cabe destacar que se efectura una de las dos instrucciones, nunca las dos.
+
+Un ejemplo sencillo seria ingresar dos numeros por consola, e imprimir el menor de ellos.
+El codigo seria el siguiente:
+
+num1=int(input("Ingrese primer valor: "))
+num2=int(input("ingrese segundo valor: "))
+print("El valor menor es")
+if num1<num2:
+    print(num1)
+else:
+    print(num2)
+
+Si analizamos el codigo nos percataremos que ahora hemos agregado la palabra reservada "else" la cual indicara el camino a tomar cuando la condición no se cumpla.
+
+Operadores
+
+Las condiciones deben disponirse solo con constantes, variables y operadores relaciones.
+
+Los operadores relaciones son los siguienes:
+
+== Igual a
+
+!= Diferente a
+
+< Menor a
+
+<= Menor o igual a
+
+> Mayor a
+
+>= Mayor o igual a
+
+Por ejemplo si queremos verificar si un numero es mayor o igual a 10 podriamos hacer lo siguiente:
+
+
+num_prueba = int(input("Ingrese un numero: "))
+
+if num_prueba >= 10:
+    print("Mayor o igual a 10")
+
+Los operadores matematicos (que no deber ir en las condiciones de una estructura condicional) son los siguientes:
+
++ Suma
+
+- Resta
+
+* Multiplicación
+
+/ División
+
+% Resto de una divición
+
+** Exponenciación
+
